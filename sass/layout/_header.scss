@@ -1,0 +1,55 @@
+#header_wrap{
+    height: 80px; 
+    background-color: #000;
+
+    header{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+
+        #logo{
+            width: 85px;
+            height: 22px; 
+            position: absolute;
+            left: 0;
+            top: 40px;
+
+            img{
+                width: 100%; 
+                display: inline-block;
+            }
+        }
+
+        #mainmenu{
+            width: 630px;
+            position: absolute;
+            left: 50%; 
+            margin-left: -315px;
+            top: 25px;
+
+            li{
+                width: 20%;
+                float: left; 
+                text-align: center;
+                font-size: .875em;
+
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #quickmenu{
+            width: 180px;
+            position: absolute;
+            right: 0;
+            top: 25px;
+
+            &_list li{
+                width: 33.3333%;
+                float: left; 
+            }
+        }
+    }   
+}

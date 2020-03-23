@@ -1,0 +1,377 @@
+// best
+#best{
+    @include conWrapSet();
+
+    &_inner{
+        @include conInnerSet();
+
+        &_list{
+            
+            li{
+                @include width-mRight-left(23.5%, 2%);
+                margin-top: 30px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                .best_img img{
+                    @include imgSet();
+                }
+                .best_title{
+                    @include size-color-mbottom(1em, #212121, 10px);
+                }
+                .best_text{
+                    @include size-color-mbottom(.75em, #8C8C8C, 20px);
+                }
+                .best_price{
+                    @include size-color-mbottom(.875em, #212121, 0);
+                }
+            }
+        }
+    }
+}
+
+// banner
+#banner{
+    @include conWrapSet();
+
+    &_inner{
+        @include conInnerSet();
+        height: 270px;
+        background: url("/images/mini_banner.gif");
+        background-size: cover;
+
+        &_tbox{
+            width: 95%;
+            padding-top: 70px;
+            text-align: right;
+        }
+    }
+
+    &_sub_title{
+        @include size-color-mbottom(.875em, #fff, 10px);
+    }
+    &_title{
+        @include size-color-mbottom(2em, #fff, 20px);
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &_text a{
+        @include size-color-mbottom(.875em, #fff, 0);
+        text-decoration: none;
+        line-height: 21px;
+    }
+}
+
+// brand
+#brand{
+    @include conWrapSet();
+    height: 650px;
+
+    &_inner{
+        @include conInnerSet();
+        position: relative;
+
+        &_01{
+            @include width-height(49%, 290px);
+            @include brandConSet();
+            left: 0; 
+            top: 50px; 
+
+            &_bg{
+                @include brandBgSet();
+                background: url("/images/brand_01.gif") no-repeat; 
+            }
+            &_tbox{
+                width: 50%; 
+                position: absolute; 
+                right: 20px; 
+                top: 70px;
+            }
+        }
+
+        &_02{
+            @include width-height(49%, 290px);
+            @include brandConSet();
+            left: 0; 
+            top: 360px; 
+
+            &_bg{
+                @include brandBgSet();
+                background: url("/images/brand_02.gif") no-repeat; 
+            }
+            &_tbox{
+                width: 100%; 
+                position: absolute; 
+                left: 0;
+                top: 60px;
+                text-align: center;
+            }
+        }
+
+        &_03{
+            @include width-height(49%, 600px);
+            @include brandConSet();
+            right: 0; 
+            top: 50px; 
+
+            &_bg{
+                @include brandBgSet();
+                background: url("/images/brand_03.gif") no-repeat; 
+            }
+            &_tbox{
+                width: 50%; 
+                position: absolute; 
+                right: 60px; 
+                top: 300px;
+            }
+        }
+
+        .brand_title{
+            @include size-color-mbottom(21px, #fff, 10px)
+        }
+        .brand_text{
+            @include size-color-mbottom(12px, #fff, 15px);
+            font-weight: 300;
+            line-height: 18px;
+        }
+        .brand_btn a{
+            @include size-color-mbottom(16px, #fff, 0);
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+// subscribe
+#subscribe{
+    @include conWrapSet();
+    height: 300px;
+    margin-top: 100px; 
+    background:url("/images/subscription_banner.gif") no-repeat; 
+    background-size:cover;
+
+    &_inner{
+        @include conInnerSet();
+
+        &_text{
+            @include size-color-mbottom(1.125em, #fff, 40px);
+            line-height: 27px;
+        }
+        &_email{
+            input{
+                height: 30px; 
+                background: white;
+            }
+            #email_box{
+                width: 240px; 
+                text-indent: 10px; 
+                margin: 0 10px 10px 0;
+            }
+            #email_btn{
+                width: 100px; 
+                margin-bottom: 10px; 
+            }
+        }
+    }
+}
+
+// review
+#review{
+    @include conWrapSet();
+
+    &_inner{
+        @include conInnerSet();
+
+        &_list{
+            margin-top: 30px;
+
+            li{
+                @include width-mRight-left(32%, 2%);
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .review_img img{
+            @include imgSet();
+            margin-bottom: 15px;
+        }
+        .review_title{
+            @include size-color-mbottom(1.125em, #212121, 10px);
+            font-weight: 500;
+        }
+        .review_text{
+            @include size-color-mbottom(.875em, #212121, 40px);
+        }
+    }
+}
+
+// store
+#store{
+    width: 100%;
+    float: left;
+    background: url("/images/location_banner.gif") no-repeat; 
+    background-size: cover;
+    margin-top: 100px;
+
+    &_inner{
+        text-align: center;
+
+        &_icon{
+            margin-top: 40px; 
+            margin-bottom: 5px; 
+        }
+        &_title{
+            @include size-color-mbottom(1.5em, #fff, 20px);
+        }
+        &_text{
+            @include size-color-mbottom(1.75em, #fff, 30px);
+            font-weight: 500;
+        }
+        &_btn{
+            @include width-height(70px, 70px);
+            margin: 0 auto; 
+            padding-bottom: 50px;
+
+            img{
+                width: 100%; 
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// event
+#event{
+    @include conWrapSet();
+
+    &_inner{
+        @include conInnerSet();
+
+        &_list{
+            margin-top: 30px;
+
+            li{
+                @include width-mRight-left(49%, 2%);
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+
+            .event_img img{
+                @include imgSet();
+                margin-bottom: 20px;
+            }
+            .event_title{
+                @include size-color-mbottom(1.125em, #212121, 10px);
+                font-weight: 500;
+            }
+            .event_text{
+                @include size-color-mbottom(.875em, #8c8c8c, 15px);
+            }
+            .event_date{
+                @include size-color-mbottom(1em, #212121, 0);
+            }
+        }
+    }
+}
+
+// sns
+#sns{
+    @include conWrapSet();
+
+    &_inner{
+        @include conInnerSet();
+
+        &_tbox{
+            text-align: center;
+
+            &_icon{
+                margin-bottom: 10px;
+            }
+            &_id a{
+                font-size: 1em;
+                color: #212121;
+                text-decoration: none;
+
+                &:hover{
+                    border-bottom: solid 1px #212121;
+                }
+            }
+        }
+
+        &_list{
+            padding-top: 30px;
+
+            li{
+                @include width-mRight-left(15%, 2%);
+                margin-bottom: 24px;
+
+                &:nth-child(6n){
+                    margin-right: 0;
+                }
+
+                img{
+                    @include imgSet();
+                }
+            }
+        }
+    }
+}
+
+// video
+#video{
+    @include conWrapSet();
+    background: url("/images/video_banner.gif") no-repeat; 
+    background-size: cover;
+    margin-top:100px;
+
+    &_inner{
+        @include conInnerSet();
+    }
+
+    &_box{
+        &_play{
+            width: 68%;
+            padding-bottom: 40%;
+            position: relative;
+            left: 0;
+            top: -50px;
+            margin-right: 6%;
+            float: left;
+
+            iframe{
+                @include width-height(100%, 100%);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        &_tbox{
+            width: 26%; 
+            float: left; 
+
+            &_title{
+                @include size-color-mbottom(1.75em, #fff, 20px);
+                font-weight: 700;
+                line-height: 42px;
+                padding-top: 100px;
+            }
+            &_text{
+                @include size-color-mbottom(1em, #fff, 60px);
+            }
+            &_btn a{
+                @include size-color-mbottom(.875em, #fff, 0);
+                text-decoration: none;
+                margin-right: 10px;
+            }
+        }
+    }
+}

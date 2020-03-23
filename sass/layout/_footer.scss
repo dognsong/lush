@@ -1,0 +1,53 @@
+#footer{
+    width: 100%; 
+    height: 350px;
+    background-color: #000;
+    float: left;
+
+    &_inner{
+        @include conInnerSet();
+        position: relative;
+    }
+
+    &_logo{
+        width: 105px; 
+        height: 30px; 
+        position: absolute;
+        left: 0;
+        top: 100px;
+
+        img{
+            @include imgSet();
+        }
+    }
+
+    &_menu{
+        width: 640px; 
+        position: absolute;
+        right: 0;
+        top: 100px; 
+
+        &_list li{
+            @include width-mRight-left(20%, 0);
+            font-weight: 300;
+            
+            &:nth-child(4), &:nth-child(5){
+                text-align: right;
+            }
+
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_infor{
+        padding-top: 190px; 
+
+        p{
+            @include size-color-mbottom(14px, #fff, 10px);
+            font-weight: 300;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+#visual{
+    height: 700px;
+
+    &_list{
+        height: 100%; 
+
+        &_00{
+            height: 100%;
+            background: url("/images/mainvisual_00.jpg") center;
+            background-size: cover;
+        }
+    }
+
+    .visual_title{
+        @include size-weight-ptop(2.5em, 700, 200px);
+        @include black-center();
+    }
+    .visual_text{
+        @include size-weight-ptop(1.5em, 500, 20px);
+        @include black-center();
+    }
+    .visual_btn{
+        width: 150px;
+        height: 40px;
+        border:solid 4px #212121;
+        margin: 0 auto;
+        font-weight: 500;
+        margin-top: 50px;
+        text-align: center;
+        line-height: 40px;
+
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    #prev_btn{
+        @include visualBtn();
+        left: 0;
+    }
+    #next_btn{
+        @include visualBtn();
+        right: 0;
+    }
+}
