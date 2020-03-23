@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>러쉬리뉴얼</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediascreen.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="/js/swiper-5.2.1/package/js/swiper.min.js"></script>
+    <script src="/js/mainMenuEffect.js"></script>
+    <script src="/js/visualEffect.js"></script>
+    <script src="/js/conEffect.js"></script>
+
+</head>
+<body>
+    <!-- 바로가기메뉴 시작 -->
+    <ul id="skipmenu_list">
+        <li><a href="#">메뉴바로가기</a></li>
+        <li><a href="#">본문바로가기</a></li>
+        <li><a href="#">하단바로가기</a></li>
+    </ul>
+    <!-- 바로가기메뉴 끝 -->
+    <!-- 헤더영역 시작 -->
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo"><a href="#"><img src="/images/logo.gif" alt="러쉬"></a></h1>
+            <nav id="mainmenu">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul id="mainmenu_list">
+                    <li><a href="#">SPECIAL</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_inner">
+                                <div class="submenu_title_wrap">
+                                    <p class="submenu_title">SPECIAL</br>LUSH</p>
+                                </div>
+                                <div class="submenu_list_wrap">
+                                    <ul class="submenu_list">
+                                        <li><a href="#;">주간베스트</a></li>
+                                        <li><a href="#;">신제품</a></li>
+                                        <li><a href="#;">크리스마스단품</a></li>
+                                        <li><a href="#;">국내제조</a></li>
+                                        <li><a href="#;">별다섯개후기</a></li>
+                                        <li><a href="#;">네이키드</a></li>
+                                        <li><a href="#;">기프트베스트</a></li>
+                                        <li><a href="#;">온라인전용</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_img_wap">
+                                    <img src="images/menu_special_img.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">BRAND</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_inner">
+                                <div class="submenu_title_wrap">
+                                    <p class="submenu_title">BRAND</br>STORY</p>
+                                </div>
+                                <div class="submenu_list_wrap">
+                                    <ul class="submenu_list">
+                                        <li><a href="#;">About Lush</a></li>
+                                        <li><a href="#;">아티클</a></li>
+                                        <li><a href="#;">체러티 팟</a></li>
+                                        <li><a href="#;">젤러쉬</a></li>
+                                        <li><a href="#;">캠페인</a></li>
+                                        <li><a href="#;">원재료</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_img_wap">
+                                    <img src="images/menu_brand_img.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">SHOP</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_inner">
+                                <div class="submenu_title_wrap">
+                                    <p class="submenu_title">LUSH'S</br>OFFLINE</p>
+                                </div>
+                                <div class="submenu_list_wrap">
+                                    <ul class="submenu_list">
+                                        <li><a href="#;">전국매장찾기</a></li>
+                                        <li><a href="#;">러쉬스파</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_img_wap">
+                                    <img src="images/menu_shop_img.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span id="menu_bar"></span>
+            </nav>
+            <nav id="mobilemenu">
+                <h2 class="hidden"><img src="/images/mobilemenu.gif" alt="모바일메뉴"></h2>
+            </nav>
+            <div id="quickmenu">
+                <h2 class="hidden">아이콘메뉴</h2>
+                <ul id="quickmenu_list">
+                    <li><a href="#"><img src="/images/menu_icon_01.gif" alt="검색"></a></li>
+                    <li><a href="#"><img src="/images/menu_icon_02.gif" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="/images/menu_icon_03.gif" alt="마이페이지"></a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- 헤더영역 끝 -->
+    <!-- 비주얼영역 시작 -->
+    <div id="visual">
+        <ul id="visual_list">
+            <li id="visual_00">
+                <p class="visual_title">2019 대한민국 동물복지대상</p>
+                <p class="visual_text">농림축산식품부 장관상</p>
+                <p class="visual_btn"><a href="#">MORE</a></p>
+            </li> 
+            <li id="visual_01">
+                <p class="visual_title">러쉬, 겨울을 물들이다.</p>
+                <p class="visual_text">#러쉬크리스마스2019</p>
+                <p class="visual_btn"><a href="#">MORE</a></p>
+            </li>
+            <li id="visual_02">
+                <p class="visual_title">선물하면 러쉬</p>
+                <p class="visual_text">일상이 특별해지는 선물을 준비해보세요.</p>
+                <p class="visual_btn"><a href="#">MORE</a></p>
+            </li>
+        </ul>
+        <div id="prev_btn"><a href="#;"><img src="/images/prev_btn.gif" alt="이전이미지보기"></a></div>
+        <div id="next_btn"><a href="#;"><img src="/images/next_btn.gif" alt="다음이미지보기"></a></div>        
+    </div>
+
+
+
+    <!-- <div id="mobile_visual_wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div> -->
+
+    <!-- 비주얼영역 끝 -->
+
+
+    
+    <!-- 베스트상품영역 시작 -->
+    <div id="best_wrap">
+        <section id="best_inner">
+            <h2 class="con_title">BEST PRODUCT<span class="sub_title">러쉬가 추천하는 베스트 제품</p></h2>
+            <ul id="best_list">
+                <li>
+                    <p class="best_img"><a href="#"><img src="/images/best_01.gif" alt="플럼레인"></a></p>
+                    <p class="best_title">해피100g/250g</p>
+                    <p class="best_text">#샤워젤#해피크리스마스</p>
+                    <p class="best_price">￦ 19,000</p>
+                </li>
+                <li>
+                    <p class="best_img"><a href="#"><img src="/images/best_02.gif" alt="플럼레인"></a></p>
+                    <p class="best_title">엔젤스온베어스킨</p>
+                    <p class="best_text">#프레쉬클렌저#저자극</p>
+                    <p class="best_price">￦ 19,000</p>
+                </li>
+                <li>
+                    <p class="best_img"><a href="#"><img src="/images/best_03.gif" alt="플럼레인"></a></p>
+                    <p class="best_title">셀러브레이트</p>
+                    <p class="best_text">#보디스프레이#최애탬</p>
+                    <p class="best_price">￦ 19,000</p>
+                </li>
+                <li>
+                    <p class="best_img"><a href="#"><img src="/images/best_04.gif" alt="플럼레인"></a></p>
+                    <p class="best_title">코스메틱워리어</p>
+                    <p class="best_text">#프레쉬마스크#에그프리</p>
+                    <p class="best_price">￦ 19,000</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 베스트상품영역 끝 -->
+    <!-- 베너영역 시작-->
+    <div id="banner_wrap">
+        <section id="banner_inner">
+            <h2 class="hidden">광고</h2>
+            <div id="banner_text_box">
+                <p id="banner_sub_title">FACE CLEANSER</p>
+                <p id="banner_title"><a href="#">부들부들 클렌징</a></p>
+                <p id="banner_text"><a href="#">얼굴과 몸에 영양을 선사하는 제품으로</br>거품 없이도 깨끗한 클렌징을 도와줍니다.</a></p>
+            </div>
+        </section>
+    </div>
+    <!-- 베너영역 끝 -->
+    <!-- 브랜드영역 시작 -->
+    <div id="brand_wrap">
+        <section id="brand_inner">
+            <h2 class="con_title">BRAND<span class="sub_title">러쉬는 올바른 가치를 추구합니다.</span></h2>
+            <div id="brand_con01">
+                <div id="brand_con01_bg"></div>
+                <div id="brand_con01_tbox">
+                    <p class="brand_title">체러티 팟이란?</p>
+                    <p class="brand_text">체러티 팟 보디로션 판매금 전액(부가세제외)은 인권, 동물보호, 환경보전에 지속해서 공헌하는 비영리 소규모 단체에 후원됩니다.</p>
+                    <p class="brand_btn"><a href="#">VIEW MORE</a><img src="/images/arrow_icon.png" alt="더보기"></p>
+                </div>
+            </div>
+            <div id="brand_con02">
+                <div id="brand_con02_bg"></div>
+                <div id="brand_con02_tbox">
+                    <p class="brand_title">러쉬와 함께 더 나은 세상을 만들어요!</p>
+                    <p class="brand_text">We make the world a better place.</p>
+                    <p class="brand_btn"><a href="#">VIEW MORE</a><img src="/images/arrow_icon.png" alt="더보기"></p>
+                </div>
+            </div>
+            <div id="brand_con03">
+                <div id="brand_con03_bg"></div>
+                <div id="brand_con03_tbox">
+                    <p class="brand_title">원재료</p>
+                    <p class="brand_text">러쉬는 가장 깨끗하고 신선한 과일과 채소, 최상의 에센셜 오일, 그리고 안전한 원료를 사용하여 효과적인 제품을 만들 수 있다는 것을 믿습니다.</p>
+                    <p class="brand_btn"><a href="#">VIEW MORE</a><img src="/images/arrow_icon.png" alt="더보기"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 브랜드영역 끝 -->
+    <!-- 구독영역 시작 -->
+    <div id="subscribe_wrap">
+        <section id="subscribe_inner">
+            <h2 class="hidden">구독</h2>
+            <div id="subscribe_text">가장 빠르게 LUSH의 소식을 만나는 법!</br>지금 뉴스레터를 구독하세요.</br>언제든지 구독은 해지하실 수 있습니다.</div>
+            <form id="subscribe_email">
+                <input type="text" id="email_box" maxlength="30" placeholder="이메일 주소를 입력해주세요." autocomplete="off">
+                <input type="button" id="email_btn" value="구독하기">
+            </form>
+        </section>
+    </div>
+    <!-- 구독영역 끝 -->
+    <!-- 리뷰영역 시작 -->
+    <div id="review_wrap">
+        <section id="review_inner">
+            <h2 class="con_title">REVIEW<span class="sub_title">제품을 사용하는 생생한 모습을 보여주세요!</span></h2>
+            <ul id="review_list">
+                <li>
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_01.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+                    
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_02.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+                </li>
+                <li>
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_03.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_04.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+                </li>
+                <li>
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_05.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+                 
+                    <a href="#"><p class="review_img"><img src="/images/reveiw_06.jpg" alt="제품이름"></p></a>
+                    <p class="review_title">#프레쉬파머시</p>
+                    <p class="review_text">“피부에 닿을 때 부드러워요.”</p>
+                </li>
+            </ul>
+        </section>
+        </div>
+    <!-- 리뷰영역 끝 -->
+    <!-- 매장찾기영역 시작 -->
+    <div id="store_wrap">
+        <section id="store_inner">
+            <h2 class="hidden">매장찾기</h2>
+            <div>
+                <p id="store_icon"><img src="/images/location_icon.png" alt="위치아이콘"></p>
+                <p id="store_title">LUSH STORE</p>
+                <p id="store_text">러쉬 전국 매장 찾기</p>
+                <p id="store_btn"><a href="#"><img src="/images/plus_icon.png" alt="전국매장찾기"></a></p>
+            </div>
+        </section>
+    </div>
+    <!-- 매장찾기영역 끝 -->
+    <!-- 이벤트영역 시작 -->
+    <div id="event_wrap">
+        <section id="event_inner">
+            <h2 class="con_title">EVENT<span class="sub_title">다양한 이벤트에 참여해보세요.</span></h2>
+            <ul id="event_list">
+                <li>
+                    <p class="event_img"><a href="#"><img src="/images/event_01.gif" alt="이벤트설명"></a></p>
+                    <p class="event_title">선물하면 러쉬</p>
+                    <p class="event_text">일상이 특별해지는 선물</p>
+                    <p class="event_date">2019.11.27~2019.12.04</p>
+                </li>
+                <li>
+                    <p class="event_img"><a href="#"><img src="/images/event_02.gif" alt="이벤트설명"></a></p>
+                    <p class="event_title">러쉬 포토후기 이벤트</p>
+                    <p class="event_text">러쉬와 함께하는 일상을 담아!</p>
+                    <p class="event_date">2019.11.27~2019.12.04</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 이벤트영역 끝 -->
+    <!-- 인스타그램영역 시작 -->
+    <div id="sns_wrap">
+        <section id="sns_inner">
+            <h2 class="hidden">러쉬인스타그램</h2>
+            <div id="sns_text_box">
+                <p id="sns_icon"><img src="/images/instagram_icon.gif" alt="인스타그램아이콘"></p>
+                <p id="sns_id"><a href="https://www.instagram.com/lushkorea/">@lushkorea</a></p>
+            </div>
+            <ul id="sns_list">
+                <li><a href="#"><img src="/images/sns_01.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_02.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_03.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_04.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_05.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_06.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_07.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_08.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_09.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_10.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_11.gif" alt="사진설명"></a></li>
+                <li><a href="#"><img src="/images/sns_12.gif" alt="사진설명"></a></li>
+            </ul>
+        </section>
+    </div>
+    <!-- 인스타그램영역 끝 -->
+    <!-- 비디오영역 시작 -->
+    <div id="video_wrap">
+        <section id="video_inner">
+            <h2 class="hidden">러쉬유튜브</h2>
+            <div id="video">
+                <div id="video_play">
+                    <iframe width="816" height="459" src="https://www.youtube.com/embed/m1bu2tnX7C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="video_tbox">
+                    <p id="video_title">365일 상큼달달</br>과즙미를 풍기고 싶다면</p>
+                    <p id="video_text">러쉬의 새로운 소식을 바로 만나보세요.</p>
+                    <p id="video_btn"><a href="https://www.youtube.com/user/LUSHKOREA1">보러가기</a><img src="/images/arrow_icon.png" alt="보러가기"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 비디오영역 끝 -->
+    <!-- 하단영역 시작 -->
+    <div id="footer_wrap">
+        <footer>
+            <h2 class="hidden">하단영역</h2>
+            <div id="footer_logo"><img src="/images/logo.gif" alt="러쉬"></div>
+            <div id="footer_menu_wrap">
+                <ul id="footer_menu_list">
+                    <li><a href="#;">스카우트</a></li>
+                    <li><a href="#;">회사소개</a></li>
+                    <li><a href="#;">개인정보처리방침</a></li>
+                    <li><a href="#;">이용약관</a></li>
+                    <li><a href="#;">고객센터</a></li>
+                </ul>
+            </div>
+            <div id="footer_infor">
+                <p>고객센터 | Tel: 1644-2357 | Fax: 02-795-7516 | 월~금 10:00~17:00 (점심시간 12:00~13:00)</p>
+                <p>서울특별시 서초구 서운로 138 (서초동아타워) 6층 | 사이트 운영자: 러쉬코리아 | 대표이사: 우미령</p>
+                <p>사업자 등록번호: 201-81-77964 사업자정보확인 | 통신판매업 신고번호:2012-서울서초-0647 | 개인정보보호책임자: 우승용</p>
+                <p>CopyrightⓒLUSHKOREAco.,Ltd.All right reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    
+</body>
+</html>
