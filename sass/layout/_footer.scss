@@ -6,10 +6,16 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
         position: relative;
     }
 
     &_logo{
+        @include mq("800"){
+            top: 60px;
+        }
         width: 105px; 
         height: 30px; 
         position: absolute;
@@ -22,6 +28,10 @@
     }
 
     &_menu{
+        @include mq("800"){
+            width: 100%; 
+            top: 120px;
+        }
         width: 640px; 
         position: absolute;
         right: 0;

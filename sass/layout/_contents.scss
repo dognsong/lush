@@ -4,11 +4,23 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
 
         &_list{
             
             li{
                 @include width-mRight-left(23.5%, 2%);
+                @include mq("630"){
+                    width: 32%;
+                    &:nth-child(3){
+                        margin-right: 0;
+                    }
+                    &:last-child{
+                        display: none;
+                    }
+                }
                 margin-top: 30px;
 
                 &:last-child{
@@ -38,11 +50,18 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
+
         height: 270px;
         background: url("/images/mini_banner.gif");
         background-size: cover;
 
         &_tbox{
+            @include mq("480"){
+                text-align: center;
+            }
             width: 95%;
             padding-top: 70px;
             text-align: right;
@@ -73,19 +92,32 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
         position: relative;
 
         &_01{
             @include width-height(49%, 290px);
             @include brandConSet();
+            @include mq("630"){
+                @include width-height(100%, 200px);
+            }
             left: 0; 
             top: 50px; 
 
             &_bg{
                 @include brandBgSet();
                 background: url("/images/brand_01.gif") no-repeat; 
+                background-size: cover;
             }
             &_tbox{
+                @include mq("630"){
+                    width: 70%; 
+                    right: 15%;
+                    top: 50px;
+                    text-align: center;
+                }
                 width: 50%; 
                 position: absolute; 
                 right: 20px; 
@@ -96,18 +128,23 @@
         &_02{
             @include width-height(49%, 290px);
             @include brandConSet();
+            @include mq("630"){
+                @include width-height(100%, 200px);
+                top: 265px;
+            }
             left: 0; 
             top: 360px; 
 
             &_bg{
                 @include brandBgSet();
                 background: url("/images/brand_02.gif") no-repeat; 
+                background-size: cover;
             }
             &_tbox{
                 width: 100%; 
                 position: absolute; 
                 left: 0;
-                top: 60px;
+                top: 50px;
                 text-align: center;
             }
         }
@@ -115,14 +152,25 @@
         &_03{
             @include width-height(49%, 600px);
             @include brandConSet();
+            @include mq("630"){
+                @include width-height(100%, 200px);
+                top: 480px;
+            }
             right: 0; 
             top: 50px; 
 
             &_bg{
                 @include brandBgSet();
                 background: url("/images/brand_03.gif") no-repeat; 
+                background-size: cover;
             }
             &_tbox{
+                @include mq("630"){
+                    width: 70%; 
+                    right: 15%;
+                    top: 50px;
+                    text-align: center;
+                }
                 width: 50%; 
                 position: absolute; 
                 right: 60px; 
@@ -156,6 +204,12 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
+        @include mq("630"){
+            text-align: center;
+        }
 
         &_text{
             @include size-color-mbottom(1.125em, #fff, 40px);
@@ -185,12 +239,24 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
 
         &_list{
             margin-top: 30px;
 
             li{
                 @include width-mRight-left(32%, 2%);
+                @include mq("630"){
+                    width: 49%;
+                    &:nth-child(2){
+                        margin-right: 0;
+                    }
+                    &:last-child{
+                        display: none;
+                    }
+                }
 
                 &:last-child{
                     margin-right: 0;
@@ -253,6 +319,9 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
 
         &_list{
             margin-top: 30px;
@@ -289,6 +358,9 @@
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
 
         &_tbox{
             text-align: center;
@@ -312,6 +384,19 @@
 
             li{
                 @include width-mRight-left(15%, 2%);
+                @include mq("630"){
+                    width: 23.5%;
+                    margin-bottom: 12px;
+                    &:nth-child(4), &:nth-child(8){
+                        margin-right: 0;
+                    }
+                    &:nth-child(6){
+                        margin-right: 2% !important;
+                    }
+                    &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12){
+                        display:none;
+                    }
+                }
                 margin-bottom: 24px;
 
                 &:nth-child(6n){
@@ -331,20 +416,27 @@
     @include conWrapSet();
     background: url("/images/video_banner.gif") no-repeat; 
     background-size: cover;
-    margin-top:100px;
+    margin-top:230px;
 
     &_inner{
         @include conInnerSet();
+        @include mq("1200"){
+            width: 98%;
+        }
     }
 
     &_box{
         &_play{
-            width: 68%;
+            @include mq("630"){
+                width: 100%;
+                padding-bottom: 55%;
+            }
+            width: 60%;
             padding-bottom: 40%;
             position: relative;
             left: 0;
-            top: -50px;
-            margin-right: 6%;
+            top: -200px;
+            margin-right: 4%;
             float: left;
 
             iframe{
@@ -355,17 +447,22 @@
             }
         }
         &_tbox{
-            width: 26%; 
+            @include mq("630"){
+                width: 100%;
+                position: relative;
+                left: 30px;
+                top: -160px;
+            }
+            width: 36%; 
             float: left; 
 
             &_title{
                 @include size-color-mbottom(1.75em, #fff, 20px);
                 font-weight: 700;
                 line-height: 42px;
-                padding-top: 100px;
             }
             &_text{
-                @include size-color-mbottom(1em, #fff, 60px);
+                @include size-color-mbottom(1em, #fff, 30px);
             }
             &_btn a{
                 @include size-color-mbottom(.875em, #fff, 0);
